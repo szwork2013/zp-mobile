@@ -1,0 +1,27 @@
+{
+  "name": "zp-mobile",
+  "version": "1.0.0",
+  "description": "zp-mobile",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dtcymmtc/zp-mobile.git"
+  },
+  "author": "zhupai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtcymmtc/zp-mobile/issues"
+  },
+  "homepage": "https://github.com/dtcymmtc/zp-mobile",
+  "dependencies": {
+    "antd-mobile": "^1.0.6",
+    "echarts": "^3.4.0",
+    "react": "^15.2.1",
+    "react-css-modules": "^4.1.0",
+    "react-dom": "^15.2.1",
+    "zp-core": "^1.0.7"
+  }
+}
