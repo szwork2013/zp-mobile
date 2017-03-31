@@ -1,6 +1,6 @@
 {
   "name": "zp-mobile",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "zp-mobile",
   "main": "lib/index.js",
   "scripts": {
@@ -19,6 +19,7 @@
   "dependencies": {
     "antd-mobile": "^1.0.6",
     "echarts": "^3.4.0",
+    "photoswipe": "^4.1.1",
     "react": "^15.2.1",
     "react-css-modules": "^4.1.0",
     "react-dom": "^15.2.1",
