@@ -4,7 +4,6 @@
   position: relative;
   height: 80px;
   width: 100%;
-  border-bottom: @border-width-sm solid @border-color-base;
 
   :global{
     .drawer-group-item{
@@ -100,23 +99,34 @@
 .drawer-group-main{
   height: auto;
   background: #fff;
+  border-bottom: @border-width-sm solid @border-color-base;
 }
 
 .drawer-group-btn{
+  position: relative;
   color: #666;
   font-size: 28px;
   text-align: center;
-  line-height: 79px;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.drawer-group-btn:after{
-  content: '';
-  margin-left: 10px;
-  width: 26px;
-  height: 14px;
-  background-image: url("../styles/images/icon/filter_down.png");
-  background-size: cover;
-  display: inline-block;
+  .title{
+    position: relative;
+    line-height: 79px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+  }
+
+  .icon{
+    width: 26px;
+    height: 14px;
+    background-image: url("../styles/images/icon/filter_down.png");
+    background-size: cover;
+    flex-shrink: 0;
+  }
 }
 
 .selected{
