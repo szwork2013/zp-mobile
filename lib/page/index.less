@@ -2,13 +2,12 @@
 
 .page{
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header{
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
+  position: relative;
   z-index: 99;
 
   :global{
@@ -22,22 +21,25 @@
         display: none;
       }
     }
+
+    .am-navbar-right{
+      .none{
+        color: @brand-primary;
+      }
+    }
+
   }
 }
 
 .page-content{
-  position: absolute;
-  width: 100%;
-  opacity: 0;
+  position: relative;
+  flex: 1;
   -webkit-overflow-scrolling : touch;
   overflow: auto;
 }
 
 .page-footer{
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  z-index: 99;
+  position: relative;
 }
 
 .page-header-select {
