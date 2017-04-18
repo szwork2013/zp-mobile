@@ -6,10 +6,14 @@
   width: 100%;
 
   .drawer-group-content{
-    position: fixed;
+    position: absolute;
     left: 0;
     height: 80px;
     width: 100%;
+
+    &.isShow{
+      position: fixed;
+    }
   }
 
   :global{

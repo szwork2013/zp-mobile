@@ -1,16 +1,22 @@
 @import "~antd-mobile/lib/style/themes/default.less";
 
-.page{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
+:global{
+  .zp-page{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
 
-.page-header{
-  position: relative;
-  z-index: 99;
+    &.loaded{
+      opacity: 1;
+      transition: opacity 0.1s linear;
+    }
+  }
 
-  :global{
+  .zp-page-header{
+    position: relative;
+    z-index: 99;
+
     .am-navbar-left-icon{
       background: url("../styles/images/icon/goBack.png");
       background-size: cover;
@@ -27,19 +33,18 @@
         color: @brand-primary;
       }
     }
-
   }
-}
 
-.page-content{
-  position: relative;
-  flex: 1;
-  -webkit-overflow-scrolling : touch;
-  overflow: auto;
-}
+  .zp-page-content{
+    position: relative;
+    flex: 1;
+    -webkit-overflow-scrolling : touch;
+    overflow: auto;
+  }
 
-.page-footer{
-  position: relative;
+  .zp-page-footer{
+    position: relative;
+  }
 }
 
 .page-header-select {

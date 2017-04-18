@@ -1,11 +1,15 @@
+@import "~antd-mobile/lib/style/themes/default.less";
+
 .search-bar{
   position: relative;
 
   :global{
     //搜索栏
     .am-search-start{
-      .am-search-synthetic-ph{
-        width: 27px !important;
+      .am-search-input{
+        .am-search-synthetic-ph{
+          width: 27px !important;
+        }
       }
     }
 
@@ -15,6 +19,118 @@
 
     .am-search-synthetic-ph-icon{
       vertical-align: -6px;
+    }
+  }
+}
+
+.select{
+  position: relative;
+
+  :global{
+    //搜索栏
+    .am-search-input{
+      .am-search-synthetic-ph-icon{
+        display: none;
+      }
+    }
+    .am-search-start{
+      .am-search-input{
+        .am-search-synthetic-ph{
+          display: none;
+          padding-left: 100px;
+        }
+        input[type="search"]{
+          padding-left: 130px;
+        }
+      }
+    }
+  }
+}
+
+.show{
+  .select-content,
+  .mask{
+    display: block;
+  }
+}
+
+.mask{
+  display: none;
+  z-index: 99;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.select-wrap{
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  width: 130px;
+  text-align: center;
+  line-height: @search-bar-input-height;
+  margin-top: -1*@search-bar-input-height/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-value{
+  padding-right: 10px;
+  font-size: @font-size-caption;
+  color: #666;
+}
+
+.select-icon{
+  width: 10px;
+  height: 6px;
+  background: url("../styles/images/icon/search_down.png");
+  background-size: cover;
+}
+
+.select-content{
+  left: 30px;
+  z-index: 99;
+  position: absolute;
+  display: none;
+  width: 200px;
+  background: #fff;
+  border-radius: 4px;
+
+  &:before{
+    content: '';
+    top: -18px;
+    left: 44px;
+    position: absolute;
+    width: 30px;
+    height: 18px;
+    background: url("../styles/images/icon/search_up.png");
+    background-size: cover;
+  }
+
+  ul{
+    li{
+      padding: 0 40px 0 30px;
+      line-height: 88px;
+      color: @color-text-base;
+      font-size: @font-size-caption;
+      border-bottom: @border-width-sm solid @border-color-base;
+      display: flex;
+      align-items: center;
+
+      div{
+        margin-right: 30px;
+        width: 36px;
+        height:36px;
+      }
+
+      &:last-child{
+        border: 0;
+      }
     }
   }
 }
