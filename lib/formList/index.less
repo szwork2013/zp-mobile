@@ -45,5 +45,34 @@
         background-position: 50% 50%;
       }
     }
+
+    .am-input-token{
+      .am-input-extra{
+        margin-left: 20px;
+        overflow: visible;
+      }
+
+      .token-btn{
+        position: relative;
+        width: 200px;
+        color: @brand-primary;
+        font-size: @font-size-heading;
+        text-align: center;
+
+        &:after{
+          content: '';
+          position: absolute;
+          margin-top: -30px;
+          top: 50%;
+          left: 0;
+          height: 60px;
+          border-left: @border-width-sm solid @border-color-base;
+        }
+
+        &.active{
+          color: @color-text-disabled;
+        }
+      }
+    }
   }
 }
