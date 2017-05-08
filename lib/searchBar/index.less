@@ -1,9 +1,15 @@
 @import "~antd-mobile/lib/style/themes/default.less";
 
-.search-bar{
-  position: relative;
+:global{
+  .zp-search-bar{
+    display: flex;
+    position: relative;
+    align-items: center;
 
-  :global{
+    .am-search{
+      flex: 1;
+    }
+
     //搜索栏
     .am-search-start{
       .am-search-input{
@@ -133,4 +139,13 @@
       }
     }
   }
+}
+
+.search-bar-content{
+  flex-shrink: 0;
+  padding-left: @h-spacing-md;
+}
+
+.search-bar-input{
+  flex: 1;
 }
