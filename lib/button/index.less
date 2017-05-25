@@ -1,3 +1,27 @@
-.button-submit{
-  padding: 0.2rem 0.1rem;
+@import "~antd-mobile/lib/style/themes/default.less";
+
+:global{
+  .zp-btn-submit{
+    &.am-button{
+      font-size: @font-size-caption;
+
+      &.none{
+        background-color: transparent;
+        border: 0;
+      }
+
+      .am-icon-loading{
+        width: 30px;
+        height: 30px;
+        border: 2px solid #fff;
+        border-left: 2 px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-radius: 50%;
+
+        use{
+          display: none;
+        }
+      }
+    }
+  }
 }

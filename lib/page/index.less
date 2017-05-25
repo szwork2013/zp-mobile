@@ -5,17 +5,12 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    //opacity: 0;
-    //
-    //&.loaded{
-    //  opacity: 1;
-    //  transition: opacity 0.1s linear;
-    //}
   }
 
   .zp-page-header{
     position: relative;
     z-index: 99;
+    flex-shrink: 0;
 
     .am-navbar-left-icon{
       background: url("../styles/images/icon/goBack.png");
@@ -37,10 +32,12 @@
 
   .zp-page-content{
     position: relative;
+    overflow: hidden;
     flex: 1;
   }
 
   .zp-page-footer{
+    flex-shrink: 0;
     position: relative;
   }
 }

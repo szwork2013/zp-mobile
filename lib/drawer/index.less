@@ -30,12 +30,10 @@
 .drawer-group-btn{
   position: relative;
   height: auto;
-  display: flex;
   background: #fff;
   border-bottom: @border-width-sm solid @border-color-base;
 
   .drawer-group-btn-item{
-    flex: 1;
     &.selected{
       .btn-content{
         color: @brand-primary;
@@ -57,7 +55,7 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      padding-right: 10px;
+      padding: 0 10px;
     }
 
     .btn-icon{
