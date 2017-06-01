@@ -1,6 +1,6 @@
 {
   "name": "zp-mobile",
-  "version": "1.7.5",
+  "version": "1.8.0",
   "description": "zp-mobile",
   "main": "lib/index.js",
   "scripts": {
@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/dtcymmtc/zp-mobile",
   "dependencies": {
-    "antd-mobile": "^1.1.1",
+    "antd-mobile": "^1.1.3",
     "echarts": "^3.4.0",
     "photoswipe": "^4.1.1",
-    "react": "^15.2.1",
+    "react": "^15.4.2",
     "react-css-modules": "^4.1.0",
-    "react-dom": "^15.2.1",
-    "zp-core": "^1.7.0"
+    "react-dom": "^15.4.2",
+    "zp-core": "^1.8.0"
   }
 }
