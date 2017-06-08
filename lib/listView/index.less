@@ -4,8 +4,22 @@
   .zp-listView{
     height: 100%;
 
+    .am-icon-loading{
+      width: 40px;
+      height: 40px;
+      border: 2px solid #999;
+      border-left: 2 px solid transparent;
+      border-bottom: 2px solid transparent;
+      border-radius: 50%;
+
+      use{
+        display: none;
+      }
+    }
+
     .am-list-header{
       padding: 0;
+      display: block;
     }
 
     .am-list-view-scrollview{
@@ -37,9 +51,18 @@
     }
 
     .am-list-footer{
-      padding: 40px;
+      padding: 60px 40px;
     }
   }
+}
+
+.listView-content,
+.listView-empty{
+  position:  absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .indexed-list{
