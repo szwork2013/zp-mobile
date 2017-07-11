@@ -6,5 +6,26 @@
     width: 100%;
     -webkit-overflow-scrolling: touch;
     overflow: auto;
+
+    &.loaded{
+      .zp-scroll-wrap{
+        height: 0;
+      }
+
+      .zp-scroll-content{
+        position: relative;
+      }
+    }
+  }
+
+  .zp-scroll-content{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .zp-scroll-wrap{
+    height: 10000PX;
   }
 }
