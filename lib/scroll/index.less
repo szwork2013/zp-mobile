@@ -6,6 +6,8 @@
     width: 100%;
     -webkit-overflow-scrolling: touch;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
 
     &.loaded{
       .zp-scroll-wrap{
@@ -13,6 +15,7 @@
       }
 
       .zp-scroll-content{
+        flex: 1;
         position: relative;
       }
     }

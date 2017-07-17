@@ -1,6 +1,6 @@
 {
   "name": "zp-mobile",
-  "version": "1.9.3",
+  "version": "1.9.4",
   "description": "zp-mobile",
   "main": "lib/index.js",
   "scripts": {
