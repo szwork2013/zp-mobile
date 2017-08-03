@@ -7,12 +7,12 @@
     border-bottom: @border-width-sm solid @border-color-base;
 
     .table-content{
-      padding-left: 20px;
+      padding: 0 20px;
     }
 
     .table-row{
+      display: flex;
       border-bottom: @border-width-sm solid @border-color-base;
-      overflow: hidden;
 
       &:last-child{
         border: none;
@@ -20,7 +20,9 @@
     }
 
     .table-row-item{
-      float: left;
+      display: flex;
+      flex: 1;
+      //float: left;
       padding: 20px 0;
       overflow: hidden;
       font-size: 28px;
@@ -28,7 +30,10 @@
     }
 
     .table-row-item-name{
-      float: left;
+      //float: left;
+      //width: 100px;
+      width: 150px;
+      flex-shrink: 0;
       color: #999;
 
       .skeleton-middle{
@@ -37,7 +42,6 @@
     }
 
     .table-row-item-value{
-      float: right;
       color: #333;
       word-break: break-all;
 
@@ -46,24 +50,24 @@
       }
     }
 
-    .row-1{
-      .table-row-item-name{
-        width: 20%;
-      }
+    //.row-1{
+    //  .table-row-item-name{
+    //    width: 20%;
+    //  }
+    //
+    //  .table-row-item-value{
+    //    width: 80%;
+    //  }
+    //}
 
-      .table-row-item-value{
-        width: 80%;
-      }
-    }
-
-    .row-2{
-      .table-row-item-name{
-        width: 40%;
-      }
-
-      .table-row-item-value{
-        width: 60%;
-      }
-    }
+    //.row-2{
+    //  .table-row-item-name{
+    //    width: 40%;
+    //  }
+    //
+    //  .table-row-item-value{
+    //    width: 60%;
+    //  }
+    //}
   }
 }
